@@ -4,3 +4,8 @@
 #the day with my work. Tomorrow I will begin again. 
 #I am now looking into a warning that said "adding ip address to list of known
 #hosts" to see if it always gives that warning. Might have to figure that out. 
+install.packages("seqinr")
+library(seqinr)
+ATP6 <- read.fasta(file = 'ATP6_coding.fasta', 
+                   seqtype = c("DNA", "AA"))
+head(ATP6)
